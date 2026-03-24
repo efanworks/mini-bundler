@@ -25,6 +25,8 @@ const modules = {
     function __mini_require__(moduleId) {
         if (cache[moduleId]) return cache[moduleId].exports;
         const module = { exports: {} };
+        // 先缓存，为了处理循环依赖
+        // A -> require(B) -> require(A) ，第二次加载A会被当成未加载，继续递归导致死循环
         cache[moduleId] = module;
         modules[moduleId](module, __mini_require__);
 
