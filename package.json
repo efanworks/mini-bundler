@@ -1,0 +1,21 @@
+{
+  "name": "mini-bundler",
+  "version": "1.0.0",
+  "description": "A minimal CommonJS require bundler",
+  "main": "src/bundler.js",
+  "bin": {
+    "mini-bundler": "./bin/mini-bundler.js"
+  },
+  "scripts": {
+    "build:example": "node ./bin/mini-bundler.js build examples/src/index.js -o examples/dist/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/generator": "^7.29.1",
+    "@babel/parser": "^7.29.2",
+    "@babel/traverse": "^7.29.0",
+    "commander": "^14.0.3"
+  }
+}
