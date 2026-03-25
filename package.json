@@ -1,6 +1,6 @@
 {
   "name": "@efanworks/mini-bundler",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "A minimal CommonJS require bundler",
   "main": "src/bundler.js",
   "bin": {
